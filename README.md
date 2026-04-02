@@ -22,4 +22,4 @@ The contact form submits `name`, `email`, and `message` to Google Sheets through
 
 - HTML5
 - CSS3
-- JavaScript (vanilla)
+- JavaScript

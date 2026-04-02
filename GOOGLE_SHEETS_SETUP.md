@@ -53,6 +53,7 @@ Open these files and set `data-sheets-endpoint`:
 Example:
 
 ```html
-<form id="contact-form" data-sheets-endpoint="https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec">
+<form id="contact-form" data-sheets-endpoint="https://script.google.com/macros/s/AKfycby8G9XAOxcl4ifpwffgnDJsGnqmBiOja1xMmK60j23tD8bBnCVxfO792ARoymVerP1E
+/exec">
 ```
 

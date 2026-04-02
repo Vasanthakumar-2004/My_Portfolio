@@ -29,6 +29,11 @@
       setStatus(statusEl, "Setup needed: add your Google Sheets Web App URL in data-sheets-endpoint.", "error");
       return;
     }
+    if (/^https?:\/\/forms\.gle\//i.test(endpoint) || /^https?:\/\/docs\.google\.com\/forms\//i.test(endpoint)) {
+      e.preventDefault();
+      setStatus(statusEl, "You pasted a Google Forms link. Use the Apps Script Web App URL (script.google.com/.../exec) from GOOGLE_SHEETS_SETUP.md.", "error");
+      return;
+    }
 
     e.preventDefault();
     const submitBtn = form.querySelector("button[type=\"submit\"]");

@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="index.css">
     <title>VasanthaKumar Portfolio</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <nav class="nav-container">
@@ -189,7 +190,7 @@
                         </button>
                     </div>
                 </div>
-
+            </div>
             <div class="more-work">
                 <a href="https://github.com/Vasanthakumar-2004" target="blank">More Works</a>
             </div>
@@ -201,13 +202,13 @@
             <div class="container">
                 <div class="contact-content">
                     <h2>Contact Me</h2>
-
-                    <li class="contact-icons">
-                        <input type="text" placeholder="Enter your name" required>
-                        <input type="email" placeholder="Enter your email" required>
-                        <textarea placeholder="Enter your message" required></textarea>
+                    <form class="contact-form" id="contact-form" data-sheets-endpoint="">
+                        <input type="text" name="name" placeholder="Enter your name" autocomplete="name" required>
+                        <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                        <textarea name="message" placeholder="Enter your message" rows="4" required></textarea>
                         <button type="submit">Send Message</button>
-                    </li>
+                        <p class="form-status" id="contact-status" aria-live="polite"></p>
+                    </form>
 
                     <p class="mail">
                         Get in touch with me

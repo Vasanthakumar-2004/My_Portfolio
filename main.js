@@ -11,12 +11,13 @@
 
   async function submitToSheets(endpoint, data) {
     const body = new URLSearchParams(data);
-    const res = await fetch(endpoint, {
+    await fetch(endpoint, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body,
     });
-    return res.ok;
+    return true;
   }
 
   async function onSubmit(e) {
@@ -50,8 +51,7 @@
     setStatus(statusEl, "Sending…", "info");
 
     try {
-      const ok = await submitToSheets(endpoint, { name, email, message, page: location.pathname, ts: new Date().toISOString() });
-      if (!ok) throw new Error("Request failed");
+      await submitToSheets(endpoint, { name, email, message, page: location.pathname, ts: new Date().toISOString() });
       form.reset();
       setStatus(statusEl, "Message sent successfully.", "success");
     } catch {

@@ -432,11 +432,11 @@ a{
 }
 
 .progress-line .html {
-    width: 80%;
+    width: 50%;
 }
 
 .progress-line .css {
-    width: 70%;
+    width: 50%;
 }
 
 .progress-line .bootstrap {
@@ -500,11 +500,11 @@ a{
 }
 
 .progress-line .html::after {
-    content: "80%";
+    content: "50%";
 }
 
 .progress-line .css::after {
-    content: "70%";
+    content: "50%";
 }
 
 .progress-line .bootstrap::after {

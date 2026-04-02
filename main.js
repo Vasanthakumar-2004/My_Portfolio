@@ -1,6 +1,5 @@
 (() => {
-  const DEFAULT_ENDPOINT = "https://script.google.com/macros/s/AKfycbz0I5yYVTTUwa115kjIw3XCAq9MMgZbXia7VqjFE_3TooB5V_99bil3Hx9yUqxcmLl8/exec";
-
+  const DEFAULT_ENDPOINT = "https://script.google.com/macros/s/AKfycbxq3XnWbDhPx257gtrZGJ5Cny6Xc65-8sm-J-P-5jkpeSm6nsvsNx46kxS2k51-QV_N/exec";
   function setStatus(el, msg, kind) {
     if (!el) return;
     el.textContent = msg || "";
